@@ -1,9 +1,7 @@
-import { Content } from '@application/entities/content';
-import { Notification } from '@application/entities/notification';
 import { CancelNotification } from '../cancel-notification';
-import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-notifications-repository';
 import { NotificationNotFound } from '../errors/notification-not-found.error';
-import { makeNotification } from '@test/factories/notification.facotory';
+import { makeNotification } from '@test/factories/notification.factory';
+import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-notifications-repository';
 
 describe('Cancel notification', () => {
   it('should be able to cancel a notification', async () => {
