@@ -18,6 +18,12 @@
     "strictPropertyInitialization": false,
     "noImplicitAny": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@application/*": ["./src/application/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@test/*": ["./test/*"]
+    }
   }
 }
